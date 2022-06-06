@@ -18,7 +18,7 @@ public class Publisher {
     private String zip;
 
     @OneToMany // means that the publisher is one and it has many books
-    @JoinColumn(name = "publisher_id") // tells Hibernate to add a publisher ID to the book record to track publisher - create a foreign key relationship
+    @JoinColumn(name = "publisher_id") // tells Hibernate to add a publisher ID to every element of book table - create a foreign key relationship
     private Set<Book> books = new HashSet<>();
 
     public Publisher() {
