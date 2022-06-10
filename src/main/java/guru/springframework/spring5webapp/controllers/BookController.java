@@ -19,6 +19,6 @@ public class BookController { // you should name class as: "Name+Controller" - t
 
         model.addAttribute("books", bookRepository.findAll()); // 6.3. assigns list of books form "BookRpository" repository to Model instance through attributeName ("books")
 
-        return "books"; // 6.4. define name of a View as a return type
+        return "books/list"; // 6.4. define path to a View Component
     }
 }
